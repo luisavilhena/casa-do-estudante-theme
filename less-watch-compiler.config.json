@@ -1,5 +1,5 @@
  {
-     "allowedExtensions":[".less"],
+    "allowedExtensions":[".less"],
     "enableJs": true,
     "minified": false,
     "sourceMap": false,

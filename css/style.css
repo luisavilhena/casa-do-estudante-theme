@@ -1,7 +1,16 @@
 h1 {
   color: red;
   font-size: 50px;
+  text-align: right;
 }
 p {
   color: blue;
+}
+.template-home {
+  display: flex;
+}
+.template-home > img {
+  width: 100vh;
+  height: auto;
+  margin: 0 auto;
 }
