@@ -8,7 +8,13 @@ get_header(); ?>
       src="<?php echo get_template_directory_uri() ?>/resources/img/page_principal.jpeg"
   />
   <div class="template-home__contents">
-    <div>
+    <div class="box box_1">
+    	<h2>
+    		título 1
+    	</h2>
+    	<p>
+    		lorem ipsum
+    	</p>
     	
     </div>
   </div>

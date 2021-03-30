@@ -1,16 +1,30 @@
-h1 {
-  color: red;
-  font-size: 50px;
-  text-align: right;
-}
-p {
-  color: blue;
-}
 .template-home {
-  display: flex;
+  position: relative;
 }
 .template-home > img {
   width: 100vh;
   height: auto;
   margin: 0 auto;
+}
+.template-home .template-home__contents > .box {
+  position: absolute;
+  top: 800px;
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+body {
+  font-family: 'Barlow', sans-serif;
+}
+h1 {
+  font-size: 65px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+p {
+  font-size: 18px;
 }
