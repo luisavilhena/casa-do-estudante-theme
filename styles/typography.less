@@ -1,6 +1,5 @@
-body {
-	font-family: 'Barlow', sans-serif;
-}
+@import './structure.less';
+
 
 h1 {
  font-size: 65px;
@@ -9,7 +8,20 @@ h1 {
 h2 {
 	font-size: 30px;
 	font-weight: 500;
+	margin-bottom: 10px;
 }
 p {
 	font-size: 18px;
+}
+
+@media only screen and (max-device-width: @max-mobile) {
+	h1 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 12px;
+	}
+	p {
+		font-size: 9px;
+	}
 }

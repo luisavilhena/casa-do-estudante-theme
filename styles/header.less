@@ -1,0 +1,73 @@
+@import './structure.less';
+
+
+header {
+	font-family: 'Barlow', sans-serif;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background-color: @yellow;
+	padding: 50px 30px 0px 50px;
+	width: 310px;
+	#mobile-menu-trigger {
+		display: none;
+	}
+	.header-logo {
+		font-size: 42px;
+		font-weight: 700;
+		text-decoration: none;
+		color: black;
+		display: block;
+		margin-bottom: 120px;
+	}
+	.header-menu-container {
+		margin-bottom: 120px;
+		ul#main-menu {
+			font-weight: 400;
+			font-size: 28px;
+			> li {
+				margin-bottom: 20px;
+				> a {
+					color: black;
+					display: block;
+					text-decoration: none;
+					&:after {
+						content: '';
+						display: flex;
+						flex-direction: column;
+						margin-top: 19px;
+						width: 70px;
+						height: 5px;
+						background-color: black;
+					}
+				}
+				&:last-of-type {
+					> a {
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	> div.header-menu-social {
+		> a {
+			color: black;
+			font-size: 20px;
+		}
+		> div {
+			display: flex;
+			justify-content: flex-start;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			svg {
+				height: 30px;
+				width: 30px;
+				margin-right: 10px;
+			}
+		}
+	}
+}
