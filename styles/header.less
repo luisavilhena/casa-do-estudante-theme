@@ -15,14 +15,15 @@ header {
 	}
 	.header-logo {
 		font-size: 42px;
+		line-height: 50.4px;
 		font-weight: 700;
 		text-decoration: none;
 		color: black;
 		display: block;
-		margin-bottom: 120px;
+		margin-bottom: 100px;
 	}
 	.header-menu-container {
-		margin-bottom: 120px;
+		margin-bottom: 100px;
 		ul#main-menu {
 			font-weight: 400;
 			font-size: 28px;
@@ -68,6 +69,71 @@ header {
 				width: 30px;
 				margin-right: 10px;
 			}
+		}
+	}
+	@media (max-device-width: @max-mobile) {
+		padding: 20px 0px 20px 20px;
+		width: auto;
+		right: 0;
+		position: sticky;
+		.header-logo {
+			font-size: 30px;
+			line-height: 36px;
+			width: 190px;
+			margin-bottom: 0px;
+		}
+		#mobile-menu-trigger {
+		  display: block;
+		  // outline: none;
+
+		  background-color: transparent;
+		  border: none;
+
+		  position: absolute;
+		  z-index: 100;
+
+		  top: 38px;
+		  right: 20px;
+		  width: 30px;
+		  height: 30px;
+
+		  transform: translateY(-50%);
+
+		  cursor: pointer;
+
+		  > span {
+		    display: block;
+		    position: absolute;
+		    height: 4px;
+		    width: 28px;
+		    background-color: currentColor;
+		    opacity: 1;
+		    left: 4px;
+		    border-radius: 6px;
+		    transform: rotate(0deg);
+		    transition: .25s ease-in-out;
+		  }
+
+		  > span:nth-child(1) {
+		    top: 9px;
+		    transform-origin: left center;
+		  }
+
+		  > span:nth-child(2) {
+		    top: 20px;
+		    transform-origin: left center;
+		  }
+
+		  > span:nth-child(3) {
+		    top: 31px;
+		    transform-origin: left center;
+		  }
+		}
+		.header-menu-container {
+			display: none;
+		}
+		> div.header-menu-social {
+			display: none;
 		}
 	}
 }
