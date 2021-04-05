@@ -71,11 +71,14 @@ header {
 			}
 		}
 	}
-	@media (max-device-width: @max-mobile) {
+	@media screen and (max-width: @max-mobile) {
 		padding: 20px 0px 20px 20px;
 		width: auto;
 		right: 0;
+		height: 72px;
 		position: sticky;
+		transition: height 0.3s;
+
 		.header-logo {
 			font-size: 30px;
 			line-height: 36px;
@@ -84,7 +87,6 @@ header {
 		}
 		#mobile-menu-trigger {
 		  display: block;
-		  // outline: none;
 
 		  background-color: transparent;
 		  border: none;
@@ -131,9 +133,38 @@ header {
 		}
 		.header-menu-container {
 			display: none;
+			margin-top: 70px;
 		}
 		> div.header-menu-social {
 			display: none;
+		}
+		&.menu-open {
+			height: 100vh;
+
+		  #mobile-menu-trigger {
+		    > span:nth-child(1) {
+		      transform: rotate(45deg);
+		      top: 7px;
+		      left: 7px;
+		    }
+
+		    > span:nth-child(2) {
+		      width: 0;
+		      opacity: 0;
+		    }
+
+		    > span:nth-child(3) {
+		      transform: rotate(-45deg);
+		      top: 25px;
+		      left: 7px;
+		    }
+		  }
+		  .header-menu-container {
+		  	display: block;
+		  }
+		  > div.header-menu-social {
+		  	display: block;
+		  }
 		}
 	}
 }
