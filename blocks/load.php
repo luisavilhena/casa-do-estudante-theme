@@ -3,4 +3,5 @@
 	require('decoration-bg.php');
 	require('decoration-sm.php');
 	require('logo-list.php');
+	require('number-text-item');
 ?>
