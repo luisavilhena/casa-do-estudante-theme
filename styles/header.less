@@ -8,7 +8,7 @@ header {
 	bottom: 0;
 	left: 0;
 	background-color: @yellow;
-	padding: 50px 0px 0px 50px;
+	padding: 50px 10px 0px 4%;
 	width: 310px;
 	z-index: 1;
 	#mobile-menu-trigger {
@@ -29,19 +29,27 @@ header {
 			font-weight: 400;
 			font-size: 28px;
 			> li {
-				margin-bottom: 20px;
+				margin-bottom: 40px;
 				> a {
 					color: black;
-					display: block;
+					display: inline;
 					text-decoration: none;
+					position: relative;
 					&:after {
 						content: '';
 						display: flex;
+						position: absolute;
 						flex-direction: column;
 						margin-top: 19px;
 						width: 70px;
 						height: 5px;
 						background-color: black;
+						transition: width .5s;
+					}
+				}
+				> a:hover {
+					&:after {
+						width: 100%;
 					}
 				}
 				&:last-of-type {
@@ -72,8 +80,8 @@ header {
 			}
 		}
 	}
-	@media screen and (max-width: @max-mobile) {
-		padding: 20px 0px 20px 20px;
+	@media screen and (max-width: @screen-md)  {
+		padding: 20px 2% 20px 2%;
 		width: auto;
 		right: 0;
 		height: 40px;

@@ -5,6 +5,7 @@ h1 {
  font-size: 65px;
  font-weight: 700;
  font-family: 'Barlow', sans-serif;
+ margin-bottom: 60px;
 }
 h2 {
 	font-size: 30px;
@@ -17,15 +18,59 @@ p {
 	font-family: 'Barlow', sans-serif;
 	line-height: 22px;
 }
+p:last-of-type {
+	margin-bottom: 50px;
+}
+a {
+	font-family: 'Barlow', sans-serif;
+	color: black;
+	font-size: 24px;
+	margin-bottom: 10px;
+	line-height: 30px;
+	font-weight: 400;
+	&:hover {
+		color: @yellow;
+	}
+}
+figure, .wp-block-image {
+	margin-bottom: 50px;
+	margin-top: 50px;
+	figcaption {
+		width: 40%;
+		font-size: 18px;
+		font-weight: 300;
+		a {
+			margin-bottom: 0;
+			font-size: 18px;
+			font-weight: 300;
+		}
+	}
+}
 
-@media only screen and (max-device-width: @max-mobile) {
+// strong {
+// 	background-color: @yellow;
+// 	font-weight: 400;
+// }
+
+@media screen and (max-width: @screen-sm) {
 	h1 {
 		font-size: 30px;
 	}
 	h2 {
-		font-size: 18px;
+		font-size: 16px;
+		margin-bottom: 3px;
 	}
 	p {
 		font-size: 16px;
+	}
+	figure, .wp-block-image {
+		margin-bottom: 30px;
+		margin-top: 30px;
+		figcaption {
+			font-size: 16px;
+			a {
+				font-size: 16px;
+			}
+		}
 	}
 }

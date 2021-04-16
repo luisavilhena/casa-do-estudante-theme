@@ -1,0 +1,206 @@
+@import './structure.less';
+
+.title-text-button {
+	.title-text-button__title {
+		margin-bottom: 50px;
+		margin-top: 30px;
+	}
+	.title-text-button__decoration {
+		display: block;
+		width: 100%;
+		height: 4px;
+		background-color: @yellow;
+		margin-bottom: 30px;
+		margin-top: 30px;
+		&.title-text-button__decoration__none {
+			display: none;
+		}
+	}
+	.title-text-button__content {
+		> .title-text-button__decoration {
+			display: none;
+		}
+		.title-text-button__content-description {
+			height: 75px;
+			margin-bottom: 40px;
+			strong {
+				font-weight: 400;
+				// background-image: linear-gradient(transparent 10%, @yellow 10%, @yellow 90%, transparent 90%);
+				// background-size: 0 100%;
+			}
+		}
+		.title-text-button__content-btn {
+			background-color: @yellow;
+			padding: 15px 25px;
+			border-radius: 27px;
+			text-decoration: none;
+			display: inline-flex;
+			font-size: 22px;
+			&:hover {
+				color: black;
+			}
+		}
+	}
+	&:hover {
+		.title-text-button__content-btn {
+			box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
+		}
+		.title-text-button__content-description {
+			strong {
+				position: relative;
+			}
+			strong:after {
+				content: "";
+			  display: inline-block;
+			  position: absolute;
+			  bottom: 0;
+			  width: 100%;
+			  height: 35px;
+			  z-index: -1; /* Place the pseudo element right under the content */
+			  // top: 0;
+			  left: 0;
+			  background: linear-gradient(to top, @yellow 50%, transparent 50%);
+			  animation-name: highlight;
+			  animation-duration: 0.75s;
+		
+			}
+			@keyframes highlight {
+			  0% {
+			    width: 0;
+			    opacity: 0;
+			  }
+
+			  50% {
+				  width: 100%;
+				  opacity: 100%;
+			  }
+			}
+		}
+	}
+	@media screen and (max-width: @screen-md) {
+		.title-text-button__content {
+			.title-text-button__content-description {
+			 	height: 80px;
+			}
+		}
+	}
+	@media screen and (max-width: @screen-sm) {
+		.title-text-button__content {
+			.title-text-button__content-btn {
+				padding: 5px 10px;
+				font-size: 16px;
+			}
+			.title-text-button__content-description {
+				strong {
+					background-color: @yellow;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: @screen-xxs) {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		.title-text-button__decoration {
+			display: none;
+		}
+		.title-text-button__title {
+			width: 29%;
+			margin-top: 30px;
+		}
+		.title-text-button__content {
+			width: 68%;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			position: relative;
+			.title-text-button__content-description {
+				height: auto;
+				margin-bottom: 15px;
+				font-size: 16px;
+			}
+
+			> .title-text-button__decoration {
+				display: block;
+		    position: absolute;
+		    bottom: 100%;
+				&.title-text-button__decoration__none {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.title-text-button-G {
+	.title-text-button-G__decoration {
+		display: block;
+		width: 100%;
+		height: 4px;
+		background-color: @yellow;
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+
+	.title-text-button-G__columns {
+		display: flex;
+		justify-content: space-between;
+		.title-text-button-G__column-1 {
+			width: 48%;
+			margin-right: 32px;
+			.title-text-button-G__column-1__title {
+				margin-bottom: 50px;
+			}
+			.title-text-button-G__column-1__description {
+				margin-bottom: 40px;
+			}
+			.title-text-button-G__column-1__btn {
+				background-color: @yellow;
+				padding: 15px 25px;
+				border-radius: 27px;
+				text-decoration: none;
+				display: inline-flex;
+				font-size: 22px;
+				&:hover {
+					color: black;
+				}
+			}
+		}
+		.title-text-button-G__column-2 {
+			width: 48%;
+		}
+	}
+	@media screen and (max-width: @screen-sm) {
+		.title-text-button-G__columns {
+			.title-text-button-G__column-1 {
+				.title-text-button-G__column-1__title {
+					margin-bottom: 25px;
+				}
+				.title-text-button-G__column-1__description {
+					margin-bottom: 15px;
+				}
+				.title-text-button-G__column-1__btn {
+					padding: 5px 10px;
+					font-size: 16px;
+				}
+			}
+			.title-text-button-G__column-2 {
+				margin-top: 15px;
+			}
+		}
+	}
+	@media screen and (max-width: @screen-xxs) {
+		.title-text-button-G__columns {
+			flex-direction: column;
+			.title-text-button-G__column-1 {
+				width: 100%;
+				.title-text-button-G__column-1__btn {
+					padding: 5px 10px;
+					font-size: 16px;
+				}
+			}
+			.title-text-button-G__column-2 {
+				width: 100%;
+			}
+		}
+	}
+}

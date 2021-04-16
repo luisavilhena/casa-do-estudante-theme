@@ -1,0 +1,110 @@
+@import './structure.less';
+
+.contact {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+	.contact-item {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 12px;
+		text-decoration: none;
+		font-size: 24px;
+		.contact-item__social {
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			font-weight: 300;
+		}
+		.contact-item__link {
+			display: block;
+			line-height: 30px;
+			height: 30px;
+		}
+		address {
+			p {
+				font-size: 24px;
+				line-height: 28.8px;
+			}
+		}
+		img {
+			width: 40px;
+			margin-right: 2%;
+		}
+	}
+	.contact-item--1 {
+		width: 58%;
+	}
+	.contact-item--2 {
+		width: 38%;
+	}
+	span {
+		height: 4px;
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		background-color: @yellow;
+	}
+}
+@media screen and (max-width: @screen-sm) {
+	.contact {
+		margin-bottom: 40px;
+		.contact-item {
+			font-size: 18px;
+			.contact-item__social {
+				font-size: 18px;
+			}
+			.contact-item__link {
+				display: block;
+				font-size: 18px;
+				line-height: 18px;
+				height: 18px;
+				margin-bottom: 3px;
+			}
+			address {
+				p {
+					font-size: 18px;
+					line-height: 18px;
+				}
+			}
+			img {
+				width: 18px;
+				margin-right: 2%;
+			}
+		}
+		span {
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+	}
+}
+@media screen and (max-width: @screen-xxs) {
+	.contact {
+		margin-bottom: 40px;
+		.contact-item {
+			font-size: 12px;
+			.contact-item__social {
+				font-size: 12px;
+			}
+			.contact-item__link {
+				font-size: 16px;
+		    margin-bottom: 3px;
+		    height: 16px;
+		    line-height: 16px;
+		    display: block;
+			}
+			address {
+				p {
+					font-size: 12px;
+					line-height: 13px;
+				}
+			}
+			img {
+				width: 14px;
+				margin-right: 1%;
+			}
+		}
+
+	}
+}
