@@ -624,16 +624,20 @@ header > div.header-menu-social > div svg {
   display: flex;
   align-items: center;
   font-weight: 300;
+  font-size: 24px;
+  font-weight: 400;
 }
 .contact .contact-item .contact-item__link {
   display: block;
   line-height: 30px;
   height: 30px;
   font-size: 24px;
+  font-weight: 400;
 }
 .contact .contact-item address p {
   font-size: 24px;
   line-height: 28.8px;
+  font-weight: 400;
 }
 .contact .contact-item img {
   width: 40px;
@@ -714,7 +718,8 @@ header > div.header-menu-social > div svg {
 .icon-link-text a {
   display: flex;
   align-items: center;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 24px;
   text-decoration: none;
 }
 .icon-link-text a img {
