@@ -21,12 +21,10 @@
 			display: none;
 		}
 		.title-text-button__content-description {
-			height: 75px;
+			height: 100px;
 			margin-bottom: 40px;
 			strong {
-				font-weight: 400;
-				// background-image: linear-gradient(transparent 10%, @yellow 10%, @yellow 90%, transparent 90%);
-				// background-size: 0 100%;
+				background-color: transparent;
 			}
 		}
 		.title-text-button__content-btn {
@@ -36,6 +34,7 @@
 			text-decoration: none;
 			display: inline-flex;
 			font-size: 22px;
+			font-weight: 400;
 			&:hover {
 				color: black;
 			}
@@ -47,34 +46,38 @@
 		}
 		.title-text-button__content-description {
 			strong {
-				position: relative;
+				background-color: @yellow;
+				transition: background-color 0.3s;
 			}
-			strong:after {
-				content: "";
-			  display: inline-block;
-			  position: absolute;
-			  bottom: 0;
-			  width: 100%;
-			  height: 35px;
-			  z-index: -1; /* Place the pseudo element right under the content */
-			  // top: 0;
-			  left: 0;
-			  background: linear-gradient(to top, @yellow 50%, transparent 50%);
-			  animation-name: highlight;
-			  animation-duration: 0.75s;
+			// strong {
+			// 	position: relative;
+			// }
+			// strong:after {
+			// 	content: "";
+			//   display: inline-block;
+			//   position: absolute;
+			//   bottom: 0;
+			//   width: 100%;
+			//   height: 35px;
+			//   z-index: -1; /* Place the pseudo element right under the content */
+			//   // top: 0;
+			//   left: 0;
+			//   background: linear-gradient(to top, @yellow 50%, transparent 50%);
+			//   animation-name: highlight;
+			//   animation-duration: 0.75s;
 		
-			}
-			@keyframes highlight {
-			  0% {
-			    width: 0;
-			    opacity: 0;
-			  }
+			// }
+			// @keyframes highlight {
+			//   0% {
+			//     width: 0;
+			//     opacity: 0;
+			//   }
 
-			  50% {
-				  width: 100%;
-				  opacity: 100%;
-			  }
-			}
+			//   50% {
+			// 	  width: 100%;
+			// 	  opacity: 100%;
+			//   }
+			// }
 		}
 	}
 	@media screen and (max-width: @screen-md) {
@@ -160,13 +163,17 @@
 				text-decoration: none;
 				display: inline-flex;
 				font-size: 22px;
-				&:hover {
-					color: black;
-				}
+				font-weight: 400;
+				color: black;
 			}
 		}
 		.title-text-button-G__column-2 {
 			width: 48%;
+		}
+		&:hover {
+			.title-text-button-G__column-1__btn {
+				box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
+			}
 		}
 	}
 	@media screen and (max-width: @screen-sm) {

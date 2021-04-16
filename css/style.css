@@ -165,13 +165,18 @@ p:last-of-type {
 a {
   font-family: 'Barlow', sans-serif;
   color: black;
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 10px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 300;
 }
 a:hover {
   color: #E2DF46;
+}
+strong {
+  background-color: #E2DF46;
+  width: 100%;
+  font-weight: 400;
 }
 figure,
 .wp-block-image {
@@ -212,6 +217,9 @@ figure figcaption a,
   }
   figure figcaption a,
   .wp-block-image figcaption a {
+    font-size: 16px;
+  }
+  a {
     font-size: 16px;
   }
 }
@@ -354,6 +362,8 @@ header .header-menu-container ul#main-menu > li > a {
   display: inline;
   text-decoration: none;
   position: relative;
+  font-weight: 400;
+  font-size: 28px;
 }
 header .header-menu-container ul#main-menu > li > a:after {
   content: '';
@@ -529,12 +539,12 @@ header > div.header-menu-social > div svg {
   display: flex;
 }
 .number-text-item .number-text-item__number .number-text-item__number__only-desktop > h3 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 22px;
   line-height: 26px;
 }
 .number-text-item .number-text-item__number .number-text-item__number__only-desktop > p {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 21px;
   line-height: 26px;
   margin-right: 5px;
@@ -619,6 +629,7 @@ header > div.header-menu-social > div svg {
   display: block;
   line-height: 30px;
   height: 30px;
+  font-size: 24px;
 }
 .contact .contact-item address p {
   font-size: 24px;
@@ -753,11 +764,11 @@ header > div.header-menu-social > div svg {
   display: none;
 }
 .title-text-button .title-text-button__content .title-text-button__content-description {
-  height: 75px;
+  height: 100px;
   margin-bottom: 40px;
 }
 .title-text-button .title-text-button__content .title-text-button__content-description strong {
-  font-weight: 400;
+  background-color: transparent;
 }
 .title-text-button .title-text-button__content .title-text-button__content-btn {
   background-color: #E2DF46;
@@ -766,6 +777,7 @@ header > div.header-menu-social > div svg {
   text-decoration: none;
   display: inline-flex;
   font-size: 22px;
+  font-weight: 400;
 }
 .title-text-button .title-text-button__content .title-text-button__content-btn:hover {
   color: black;
@@ -774,31 +786,8 @@ header > div.header-menu-social > div svg {
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 .title-text-button:hover .title-text-button__content-description strong {
-  position: relative;
-}
-.title-text-button:hover .title-text-button__content-description strong:after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 35px;
-  z-index: -1;
-  /* Place the pseudo element right under the content */
-  left: 0;
-  background: linear-gradient(to top, #E2DF46 50%, transparent 50%);
-  animation-name: highlight;
-  animation-duration: 0.75s;
-}
-@keyframes highlight {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  50% {
-    width: 100%;
-    opacity: 100%;
-  }
+  background-color: #E2DF46;
+  transition: background-color 0.3s;
 }
 @media screen and (max-width: 1250px) {
   .title-text-button .title-text-button__content .title-text-button__content-description {
@@ -876,12 +865,14 @@ header > div.header-menu-social > div svg {
   text-decoration: none;
   display: inline-flex;
   font-size: 22px;
-}
-.title-text-button-G .title-text-button-G__columns .title-text-button-G__column-1 .title-text-button-G__column-1__btn:hover {
+  font-weight: 400;
   color: black;
 }
 .title-text-button-G .title-text-button-G__columns .title-text-button-G__column-2 {
   width: 48%;
+}
+.title-text-button-G .title-text-button-G__columns:hover .title-text-button-G__column-1__btn {
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 830px) {
   .title-text-button-G .title-text-button-G__columns .title-text-button-G__column-1 .title-text-button-G__column-1__title {
