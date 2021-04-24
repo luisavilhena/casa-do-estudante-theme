@@ -3,7 +3,11 @@
 	function xi_script_enqueue(){
 		wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
 		wp_enqueue_script('customjs',  get_template_directory_uri() . '/js/index.js', array(), '1.0.0', true );
+    wp_enqueue_script('slickjs',  get_template_directory_uri() . '/slick/slick.min.js', array(), '1.8.0', true);
+    wp_enqueue_style('slickcss', get_template_directory_uri() . '/slick/slick.css', array(), '1.8.0', 'all');
+    wp_enqueue_style('slicktheme', get_template_directory_uri() . '/slick/slick-theme.css', array(), '1.8.0', 'all');
 	}
+
 
 add_action('wp_enqueue_scripts', 'xi_script_enqueue');
 
@@ -55,6 +59,13 @@ add_action( 'wp_head', 'add_viewport_meta_tag' , '1' );
 function add_viewport_meta_tag() {
     echo '<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">';
 }
+
+//post
+function support_thumbnails() {
+    add_theme_support('post-thumbnails'); // thumbnails
+}
+
+add_action('after_setup_theme', 'support_thumbnails'); // carrega parametros de suporte do tema
 
 
 

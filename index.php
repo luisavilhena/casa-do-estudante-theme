@@ -1,14 +1,26 @@
 <?php
 
 get_header(); ?>
-<?php while (have_posts()) : the_post(); ?>
 
-<main class="template-casa-do-estudante">
-	<h1 class="template-casa-do-estudante__title"><?php the_title(); ?></h1>
-	<?php the_content(); ?>
+<main class="template-casa-do-estudante blog">
+	<h1 class="template-casa-do-estudante__title">BLOG</h1>
+	<span class="decoration decoration-bg"></span>
+	<div class="blog-list">
+		<?php while (have_posts()) : the_post(); ?>
+		<a href="<?php the_permalink(); ?>" class="blog-list-item">
+			<div class="blog-list-item-img">
+				<?php the_post_thumbnail('ap_carousel_image_desktop_full_no_crop'); ?>
+			</div>
+		  <span class="decoration decoration-sm"></span>
+		  <h2 class="">
+		    <?php the_title(); ?>
+		  </h2>
+		</a>
+		<?php endwhile; ?>
+	</div>
 
 </main>
-<?php endwhile; ?>
+
 
 <?php
 get_footer();

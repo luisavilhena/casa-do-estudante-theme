@@ -1,0 +1,58 @@
+@import './structure.less';
+
+.carousel {
+	margin: 0 auto;
+	// max-width: 900px;
+
+	.slick-list {
+		border: 4px @yellow solid;
+		border-radius: 20px;
+		.item {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			height: 520px;
+		}
+	}
+	.slick-next {
+		right: -38px;
+		width: auto;
+		height: auto;
+
+		&:before {
+			content: url('../resources/icons/arrow.svg');	
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+@media screen and (max-width: @screen-md)  {
+	.carousel {
+		.slick-list {
+			.item {
+				// height: 400px;
+			}
+		}
+		.slick-next {
+			right: -5px;
+			&:before {
+				content: url('../resources/icons/arrow-sm.svg');	
+			}
+		}
+	}
+}
+@media screen and (max-width: @screen-sm)  {
+	.carousel {
+		.slick-list {
+			.item {
+				height: 400px;
+			}
+		}
+		.slick-next {
+			right: -5px;
+			&:before {
+				content: url('../resources/icons/arrow-sm.svg');	
+			}
+		}
+	}
+}

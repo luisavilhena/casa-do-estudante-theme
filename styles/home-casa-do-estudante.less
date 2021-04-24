@@ -1,0 +1,41 @@
+.home-casa-do-estudante {
+	display: flex;
+	justify-content: flex-end;
+	padding:0;
+	overflow-y: hidden;
+	position: relative;
+	max-width: 1763px;
+	img {
+	}
+	.image {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-image: url('../resources/img/fachada.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
+@media screen and (max-width: @screen-md) {
+	.home-casa-do-estudante {
+		margin-left: 0;
+		padding: 0%;
+	}
+}
+@media screen and (max-width: @screen-sm) {
+	.home-casa-do-estudante {
+		img {
+			width: 800px;
+		}
+	}
+}
+@media screen and (max-width: @screen-xxs) {
+	.home-casa-do-estudante {
+		img {
+			margin-top: -60px;
+			width: 600px;
+		}
+	}
+}

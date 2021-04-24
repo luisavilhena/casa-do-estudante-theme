@@ -1,0 +1,167 @@
+@import './structure.less';
+
+.box {
+	position: absolute;
+	overflow: hidden;
+	background-color: transparent;
+	color: transparent;
+	width: 470px;
+	border-radius: 50px;
+	.box-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 18px 20px 18px 40px;
+		h4 {
+			font-size: 26px;
+			font-weight: 500;
+		}
+		a {
+			color: transparent;
+			margin-bottom: 0;
+		}
+		div {
+			svg {
+				display: none;
+				transform: rotate(180deg);
+				transition: transform 0.5s;
+			}
+		}
+	}
+	.box-content {
+		padding: 0px 40px 18px 40px;
+		display: none;
+		p {
+			margin-bottom: 40px;
+		}
+		p, a {
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 28px;
+		}
+	}
+	&.box-open {
+		.box-header {
+			div {
+				svg {
+					transform: rotate(0deg);
+					transition: transform 0.5s;
+				}
+			}
+		}
+		.box-content {
+			display: block;
+			a:hover {
+				color: white;
+			}
+		}
+	}
+}
+.box-link {
+	a {
+		text-decoration: none;
+	}
+	div {
+		svg {
+			transform: rotate(90deg) !important;
+		}
+	}
+}
+.box-active {
+	background-color: @yellow !important;
+	color: black !important;
+	transition: background-color 4s;
+	transition: color 3s;
+	.box-header {
+		a {
+			color: black;
+			transition: color 3s;
+		}
+		>div {
+			svg {
+				display: block;
+			}
+		}
+	}
+}
+.box-1 {
+	top: 370px;
+	right: 100px;
+}
+.box-2 {
+	top: 910px;
+	left: 450px;
+}
+.box-3 {
+	top: 1500px;
+	right: 100px;
+}
+.box-4 {
+	top: 2155px;
+	left: 450px;
+}
+.box-5 {
+	top: 2760px;
+	right: 100px;
+}
+
+@media screen and (max-width: @screen-md) {
+	.box-1 {
+		top: 200px;
+	}
+	.box-2 {
+		left: 100px;
+	}
+	.box-4 {
+		left: 100px;
+	}
+}
+@media screen and (max-width: @screen-sm) {
+	.box {
+		width: 260px;
+		border-radius: 20px;
+		.box-header {
+			padding: 0px 20px;
+			h4 {
+				font-size: 16px;
+			}
+			div {
+				svg {
+					width: 20px;
+				}
+			}
+		}
+		.box-content {
+			padding: 0px 20px 20px 20px;
+			display: none;
+			p {
+				margin-bottom: 15px;
+			}
+			p, a {
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 17px;
+			}
+		}
+	}
+	.box-1 {
+		top: 40px;
+		right: 25px;
+	}
+	.box-2 {
+		top: 340px;
+		left: 25px;
+	}
+	.box-3 {
+		top: 675px;
+		right: 25px;
+	}
+	.box-4 {
+		top: 944px;
+		left: 25px;
+	}
+	.box-5 {
+		top: 1171px;
+		right: 25px;
+	}
+}
