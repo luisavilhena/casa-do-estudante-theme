@@ -10,4 +10,5 @@
 	require('title-text-button-G.php');
 	require('carousel.php');
 	require('faq.php');
+	require('time-line.php');
 ?>

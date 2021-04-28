@@ -1,0 +1,38 @@
+.blog-single {
+	max-width: 1000px;
+	padding-bottom: 100px;
+	h2 {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.blog-single__excerpt {
+		p {
+			font-size: 22px;
+			font-weight:400;
+			margin-bottom: 60px;
+			font-family: 'Barlow', sans-serif;
+		}
+	}
+	blockquote {
+		max-width: 600px;
+		width: 75%;
+		margin: 0 auto;
+		p {
+			font-size: 20px;
+			font-weight:500;
+			margin-bottom: 20px;
+		}
+		cite {
+			font-size: 18px;
+			font-weight: 500;
+		}
+	}
+	img {
+		border: 4px @yellow solid;
+		border-radius: 25px !important;
+	}
+
+	@media screen and (max-width: @screen-sm) {
+	padding-bottom: 50px;
+	}
+}

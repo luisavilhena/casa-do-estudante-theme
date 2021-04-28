@@ -1,0 +1,105 @@
+.time-line {
+	margin-bottom: 80px;
+	.time-line__title {
+		width: 48%;
+		margin-bottom: 70px
+	}
+	.time-line__content {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		.time-line__content-year {
+			width: 48%;
+			margin-right: 30px;
+			position: relative;
+			// display: flex;
+			// flex-direction: column;
+			.time-line__content-year__year {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				div {
+					display: flex;
+					align-items: center;
+					padding: 10px 20px;
+					border-radius: 30px;
+					white-space: nowrap;
+					text-align: right;
+					background-color: @yellow;
+					p {
+						font-weight: 500;
+						margin-bottom: 0px;
+						font-size: 30px;
+					}
+				}
+			}
+			.time-line__content-year__decoration {
+				position: absolute;
+		    left: 0;
+		    bottom: -30px;
+		    width: 4px;
+		    top: 31px;
+			}
+		}
+		.time-line__content-description {
+			width: 48%;
+			padding-bottom: 70px;
+			.time-line__content-description__text {
+				p {
+					margin-bottom: 25px;
+				}
+			}
+			.time-line__content-description__figure {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+				img {
+					width: 48%;
+				}
+				div {
+					width: 48%;
+					p {
+						margin-bottom: 0px;
+					}
+				}
+			}
+		}
+		&:last-of-type {
+			.time-line__content-year {
+				.time-line__content-year__decoration {
+					bottom: 0px;
+				}
+			}
+			.time-line__content-description {
+				padding-bottom: 0px;
+			}
+		}
+	}
+	@media screen and (max-width: @screen-sm) {
+		margin-bottom: 40px;
+		.time-line__title {
+			width: 30%;
+			margin-bottom: 30px;
+		}
+		.time-line__content {
+			.time-line__content-year {
+				width: 30%;
+				margin-right: 5px;
+				.time-line__content-year__decoration {
+					top: 20px;
+				}
+				.time-line__content-year__year {
+					div {
+						padding: 5px 10px;
+						p {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+			.time-line__content-description {
+				width: 78%;
+			}
+		}
+	}
+}

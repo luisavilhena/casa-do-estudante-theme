@@ -82,13 +82,17 @@
 		}
 	}
 }
-@media screen and (max-width: @screen-sm) {
+@media screen and (max-width: @screen-xxs) {
 	.blog {
 		.blog-list {
+			justify-content: flex-start;
 			.blog-list-item {
 				width: 100px;
-				margin-right: 5px;
+				margin-right: 10px;
 				margin-bottom: 40px;
+				&:nth-of-type(2n){
+					margin-right: 10px;
+				}
 				h2 {
 					line-height: 18px;
 				}
