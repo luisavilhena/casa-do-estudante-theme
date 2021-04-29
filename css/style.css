@@ -317,7 +317,6 @@ img {
   justify-content: space-between;
 }
 .title-text .highlight-title {
-  width: 28%;
   margin-top: 20px;
   text-align: left;
 }
@@ -336,6 +335,9 @@ img {
   position: absolute;
   top: -25px;
   left: 0;
+}
+.title-text .title-text__title {
+  width: 28%;
 }
 .title-text .title-text__text {
   width: 60%;

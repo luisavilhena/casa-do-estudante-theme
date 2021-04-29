@@ -21,10 +21,14 @@ function casa_do_estudante_title_text() {
 			// ob_start();
 			?>
  			<div class="title-text">
- 				<div class="highlight-title">
- 					<div class="title-text__title">
- 						<h2><?php echo  $block['title']; ?></h2>
+ 				<div class="title-text__title">
+ 					<?php if($block['title']) : ?>
+ 					<div class="highlight-title">
+ 						<div class="">
+ 							<h2><?php echo  $block['title']; ?></h2>
+ 						</div>
  					</div>
+ 				<?php endif;  ?>
  				</div>
  				<div class="title-text__text">
  					<?php echo  $block['text']; ?>
