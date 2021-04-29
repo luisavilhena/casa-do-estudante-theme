@@ -44,12 +44,12 @@ function casa_do_estudante_time_line() {
 						</div>
 						<?php if ($block['img']) :  ?>
 						<div class="time-line__content-description__img">
-							<img src="<?php echo wp_get_attachment_image_src($block['img'])[0]; ?>">
+							<img src="<?php echo wp_get_attachment_image_src($block['img'], 'ap_carousel_image_desktop_full_no_crop')[0]; ?>">
 						</div>
 						<?php endif;?>
 						<?php if ($block['figure']) :  ?>
 						<div class="time-line__content-description__figure">
-							<img src="<?php echo wp_get_attachment_image_src($block['figure'])[0]; ?>">
+							<img src="<?php echo wp_get_attachment_image_src($block['figure'], 'ap_carousel_image_desktop_full_no_crop')[0]; ?>">
 							<div>
 								<?php echo $block['figcaption']; ?>
 							</div>

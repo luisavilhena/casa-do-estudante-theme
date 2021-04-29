@@ -1,5 +1,5 @@
 <?php
-	require('highlight-title.php');
+	require('title_img.php');
 	require('decoration-bg.php');
 	require('decoration-sm.php');
 	require('logo-list.php');
@@ -11,4 +11,5 @@
 	require('carousel.php');
 	require('faq.php');
 	require('time-line.php');
+	require('title_text.php');
 ?>
