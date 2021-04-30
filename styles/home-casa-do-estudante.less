@@ -7,15 +7,21 @@
 	max-width: 1763px;
 	img {
 	}
-	.image {
-		position: absolute;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		background-image: url('../resources/img/fachada.png');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
+	.home-casa-do-estudante--img--bg {
+		display: none;
+	}
+}
+@media screen and (min-width: @screen-lg) {
+	.home-casa-do-estudante {
+		margin-left: 0;
+		padding: 0%;
+		max-width: 5000px;
+		.home-casa-do-estudante--img--bg {
+			display: block;
+		}
+		.home-casa-do-estudante--img {
+			display: none;
+		}
 	}
 }
 @media screen and (max-width: @screen-md) {

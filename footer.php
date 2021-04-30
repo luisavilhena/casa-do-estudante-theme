@@ -3,7 +3,7 @@
 			<?php echo carbon_get_theme_option('address');  ?>
 		</address>
 		<div class="footer-social">
-			<a target="_blank" href="mailto:<?php echo carbon_get_theme_option('email'); ?>">Fale conosco</a>
+			<a target="_blank" href="<?php echo carbon_get_theme_option('email'); ?>">Fale conosco</a>
 			<div>
 				<a target="_blank" href="<?php echo carbon_get_theme_option('facebook'); ?>">
 					<?php require('resources/icons/facebook.svg'); ?>

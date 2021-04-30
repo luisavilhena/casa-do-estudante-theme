@@ -16,14 +16,13 @@
 		height: 4px;
 		background-color: @yellow;
 		margin-top: 30px;
-		margin-bottom: 30px;
 	}
 	.faq__description-decoration {
 		height: 4px;
 		background-color: @yellow;
 		width: 100%;
 		display: block;
-		margin-bottom: 30px;
+		margin-bottom: 60px;
 	}
 	.faq__description-decoration-none {
 		display: none;
@@ -46,7 +45,7 @@
 			justify-content: flex-start;
 			flex-direction: column;
 			flex-wrap: wrap;
-			height: 300px;
+			height: 360px;
 			a {
 				display: block;
 				width: 206px;
@@ -58,14 +57,21 @@
 		.faq__description__item {
 			display: flex;
 			justify-content: space-between;
-			margin-bottom: 30px;
+			margin-bottom: 60px;
 			.faq__description__item__title {
+				margin-top: 60px;
 				width: 20%;
 			}
 			.faq__description__item__description {
 				width: 70%;
 				p {
 					margin-bottom: 0;
+				}
+			}
+			&:first-of-type {
+				margin-top: 60px;
+				.faq__description__item__title {
+					margin-top: 0px;
 				}
 			}
 		}
@@ -85,9 +91,11 @@
 		}
 		.faq__title-content {
 			display: flex;
+			justify-content: space-between;
 			.faq__title {
 				flex-direction: column;
-				 margin-right: 5%;
+				max-width: 32%;
+				margin-right: 15px;
 				 &:last-of-type {
 				 	margin-right: 0px;
 				 }

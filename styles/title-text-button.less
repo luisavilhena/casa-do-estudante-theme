@@ -10,8 +10,8 @@
 		width: 100%;
 		height: 4px;
 		background-color: @yellow;
-		margin-bottom: 30px;
-		margin-top: 30px;
+		margin-bottom: 55px;
+		margin-top: 55px;
 		&.title-text-button__decoration__none {
 			display: none;
 		}
@@ -29,7 +29,7 @@
 		}
 		.title-text-button__content-btn {
 			background-color: @yellow;
-			padding: 15px 25px;
+			padding: 12px 20px;
 			border-radius: 27px;
 			text-decoration: none;
 			display: inline-flex;
@@ -109,20 +109,27 @@
 		}
 		.title-text-button__title {
 			width: 29%;
-			margin-top: 30px;
+			// margin-top: 30px;
+			h2 {
+				margin-bottom: 0;
+			}
 		}
 		.title-text-button__content {
 			width: 68%;
-			margin-top: 30px;
+			// margin-top: 30px;
 			margin-bottom: 30px;
 			position: relative;
 			.title-text-button__content-description {
 				height: auto;
-				margin-bottom: 15px;
+				margin-bottom: 0px;
 				font-size: 16px;
+				p {
+					margin-bottom: 15px;
+				}
 			}
 
 			> .title-text-button__decoration {
+				margin: 30px 0 17px 0;
 				display: block;
 		    position: absolute;
 		    bottom: 100%;
@@ -140,8 +147,8 @@
 		width: 100%;
 		height: 4px;
 		background-color: @yellow;
-		margin-bottom: 30px;
-		margin-top: 30px;
+		margin-bottom: 55px;
+		margin-top: 55px;
 	}
 
 	.title-text-button-G__columns {
@@ -158,7 +165,7 @@
 			}
 			.title-text-button-G__column-1__btn {
 				background-color: @yellow;
-				padding: 15px 25px;
+				padding: 12px 20px;
 				border-radius: 27px;
 				text-decoration: none;
 				display: inline-flex;
@@ -196,6 +203,10 @@
 		}
 	}
 	@media screen and (max-width: @screen-xxs) {
+		.title-text-button-G__decoration {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
 		.title-text-button-G__columns {
 			flex-direction: column;
 			.title-text-button-G__column-1 {

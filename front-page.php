@@ -7,6 +7,9 @@ get_header(); ?>
 	<img class="home-casa-do-estudante--img"
       src="<?php echo get_template_directory_uri() ?>/resources/img/fachada.png"
   />
+  <img class="home-casa-do-estudante--img--bg"
+      src="<?php echo get_template_directory_uri() ?>/resources/img/fachada-maior.png"
+  />
   <div class="template-home__contents">
     <div class="box box-1">
       <div class="box-header">
@@ -21,7 +24,7 @@ get_header(); ?>
         <p>
           Saiba como realizar doações financeiras para a Reforma. São diversas possibilidades de doação, para instituições privadas ou para pessoas físicas. O engajamento de todos é necessário para garantir um novo pacto pela permanência estudantil. Doe Por Uma Nova Casa!
         </p>
-        <a href="">
+        <a href="https://casadoestudantehomolog.dreamhosters.com/sobre-o-financiamento/">
           Para doar, clique aqui!
         </a>
       </div>
@@ -39,7 +42,7 @@ get_header(); ?>
         <p>
           A Casa do Estudante é um edifício que abriga os estudantes pobres da Faculdade de Direito da USP, a principal instituição de ensino jurídico do país. Inaugurada em 1948, tem garantido o futuro acadêmico de alunos há mais de 70 anos. Agora, precisa da sua ajuda para garantir o futuro dos novos estudantes negros e pobres da USP.
         </p>
-        <a href="">
+        <a href="https://casadoestudantehomolog.dreamhosters.com/sobre-o-projeto-de-reforma/">
           Saiba mais
         </a>
       </div>
@@ -57,7 +60,7 @@ get_header(); ?>
         <p>
           Conheça mais sobre a história da Casa do Estudante, uma instituição fruto do pensamento vanguardista de estudantes de Direito da USP e que vem, há 70 anos, permitindo que estudantes realizem o sonho de se tornarem franciscanos. 
         </p>
-        <a href="">
+        <a href="https://casadoestudantehomolog.dreamhosters.com/sobre-a-casa-do-estudante/">
           Saiba mais
         </a>
       </div>
@@ -75,14 +78,14 @@ get_header(); ?>
         <p>
           Acompanhe no nosso blog as últimas novidades sobre a reforma. Nele contaremos como está o andamento da obra e colocaremos diversos outros conteúdos relacionados à Casa do Estudante e aos doadores.
         </p>
-        <a href="">
+        <a href="https://casadoestudantehomolog.dreamhosters.com/blog/">
           Saiba mais
         </a>
       </div>
     </div>
     <div class="box box-5 box-link">
       <div class="box-header">
-        <a class=""href="">
+        <a class=""href="https://casadoestudantehomolog.dreamhosters.com/faq/">
           <h4>
             FAQ
           </h4>
