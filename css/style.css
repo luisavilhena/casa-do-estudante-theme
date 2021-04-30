@@ -1539,6 +1539,10 @@ header > div.header-menu-social > div svg {
   justify-content: flex-end;
   align-items: center;
 }
+.time-line .time-line__content .time-line__content-year .time-line__content-year__year .decoration-bg {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .time-line .time-line__content .time-line__content-year .time-line__content-year__year div {
   display: flex;
   align-items: center;
