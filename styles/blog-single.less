@@ -4,10 +4,12 @@
 	h2 {
 		margin-top: 30px;
 		margin-bottom: 30px;
+		font-weight: 700;
 	}
 	.blog-single__excerpt {
 		p {
 			font-size: 22px;
+			line-height: 22px;
 			font-weight:400;
 			margin-bottom: 60px;
 			font-family: 'Barlow', sans-serif;
@@ -34,5 +36,17 @@
 
 	@media screen and (max-width: @screen-sm) {
 	padding-bottom: 50px;
+		h2 {
+			font-size: 22px;
+			line-height: 22px;
+			margin-bottom: 15px;
+		}
+		.blog-single__excerpt {
+			p {
+				font-size: 16px;
+				line-height: 17px;
+				margin-bottom: 40px;
+			}
+		}
 	}
 }

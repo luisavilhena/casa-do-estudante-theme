@@ -47,7 +47,7 @@
 	}
 	@media only screen and (max-device-width: @max-mobile) { 
 		img {
-			margin-top: -40px;
+			margin-top: -20px;
 		}
 	}
 }
@@ -81,5 +81,15 @@
 	}
 	.title-text__text {
 		width: 60%;
+	}
+	@media screen and (max-width: @screen-sm) {
+		flex-direction: column;
+		.title-text__title {
+			width: 100%;
+		}
+		.title-text__text {
+			width: 100%;
+		}
+
 	}
 }

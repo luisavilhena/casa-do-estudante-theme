@@ -1,21 +1,79 @@
 .template-casa-do-estudante {
 	margin-left: 360px;
 	padding: 12px 5% 70px 10%;
-	>.template-casa-do-estudante__title {
+	>.template-casa-do-estudante__header {
+		display: flex;
+		align-items: center;
 		margin-bottom: 100px;
-		max-width: 720px;
-		line-height: 78px;
-		height: 145px;
+
+		>.template-casa-do-estudante__header__title {
+			margin-bottom: 0px !important;
+			max-width: 720px;
+			height: 145px;
+		}
+		>.template-casa-do-estudante__header__btn {
+			position: relative;
+			width: 65px;
+			height: 65px;
+			margin-right: 20px;
+			input {
+				width: 65px;
+				height: 65px;
+				position: absolute;
+				border: none;
+				background-color: transparent;
+				cursor: pointer;
+			}
+			svg {
+				position: absolute;
+				height: 65px;
+				width: 65px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
 	}
 }
 @media screen and (max-width: @screen-md) {
 	.template-casa-do-estudante {
 		margin-left: 0;
-		padding: 2%;
-		> .template-casa-do-estudante__title {
-			max-width: 630px;
-			margin-top: 30px;
-			margin-bottom: 30px;
+		padding: 8%;
+		>.template-casa-do-estudante__header{
+			> .template-casa-do-estudante__header__title {
+				max-width: 630px;
+				margin-top: 0px;
+				margin-bottom: 30px;
+				line-height: 30px;
+				height: auto;
+			}
+			>.template-casa-do-estudante__header__btn {
+
+			}
+		}
+	}
+}
+@media screen and (max-width: @screen-sm) {
+	.template-casa-do-estudante {
+
+		>.template-casa-do-estudante__header{
+			> .template-casa-do-estudante__header__title {
+
+			}
+			>.template-casa-do-estudante__header__btn {
+				width: 30px;
+				height: 30px;
+				margin-right: 10px;
+				input {
+					width: 30px;
+					height: 30px;
+				}
+				svg {
+					width: 30px;
+					height: 30px;
+				}
+
+			}
 		}
 	}
 }

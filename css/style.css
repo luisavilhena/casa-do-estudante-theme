@@ -160,6 +160,7 @@ h3 {
   font-weight: 400;
   margin-bottom: 10px;
   font-family: 'Barlow', sans-serif;
+  line-height: 28px;
 }
 h4 {
   font-size: 22px;
@@ -219,11 +220,12 @@ img {
     font-size: 30px;
   }
   h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
   h3 {
     font-size: 16px;
     margin-bottom: 3px;
+    line-height: 18px;
   }
   p {
     font-size: 16px;
@@ -258,6 +260,9 @@ img {
   .flex-row .wp-block-column:first-of-type {
     flex-basis: 40% !important;
   }
+}
+.space-between {
+  justify-content: space-between;
 }
 .mejs-overlay-button {
   visibility: hidden;
@@ -316,7 +321,7 @@ img {
 }
 @media only screen and (max-device-width: 600px) {
   .title-image img {
-    margin-top: -40px;
+    margin-top: -20px;
   }
 }
 .title-text {
@@ -349,6 +354,17 @@ img {
 }
 .title-text .title-text__text {
   width: 60%;
+}
+@media screen and (max-width: 830px) {
+  .title-text {
+    flex-direction: column;
+  }
+  .title-text .title-text__title {
+    width: 100%;
+  }
+  .title-text .title-text__text {
+    width: 100%;
+  }
 }
 .decoration {
   display: block;
@@ -436,8 +452,8 @@ footer > div.footer-social > div svg {
 @media screen and (max-width: 1250px) {
   footer {
     display: flex;
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-right: 8%;
+    padding-left: 8%;
   }
 }
 header {
@@ -514,7 +530,7 @@ header > div.header-menu-social > div svg {
 }
 @media screen and (max-width: 1250px) {
   header {
-    padding: 20px 2% 20px 2%;
+    padding: 20px 8% 20px 8%;
     width: auto;
     right: 0;
     height: 40px;
@@ -612,29 +628,68 @@ header > div.header-menu-social > div svg {
   .logo-list .logo-list__item {
     margin-right: 10px;
   }
-  .logo-list .logo-list__item div img {
-    height: 50px;
-  }
 }
 .template-casa-do-estudante {
   margin-left: 360px;
   padding: 12px 5% 70px 10%;
 }
-.template-casa-do-estudante > .template-casa-do-estudante__title {
+.template-casa-do-estudante > .template-casa-do-estudante__header {
+  display: flex;
+  align-items: center;
   margin-bottom: 100px;
+}
+.template-casa-do-estudante > .template-casa-do-estudante__header > .template-casa-do-estudante__header__title {
+  margin-bottom: 0px !important;
   max-width: 720px;
-  line-height: 78px;
   height: 145px;
+}
+.template-casa-do-estudante > .template-casa-do-estudante__header > .template-casa-do-estudante__header__btn {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  margin-right: 20px;
+}
+.template-casa-do-estudante > .template-casa-do-estudante__header > .template-casa-do-estudante__header__btn input {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.template-casa-do-estudante > .template-casa-do-estudante__header > .template-casa-do-estudante__header__btn svg {
+  height: 65px;
+  width: 65px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 @media screen and (max-width: 1250px) {
   .template-casa-do-estudante {
     margin-left: 0;
-    padding: 2%;
+    padding: 8%;
   }
-  .template-casa-do-estudante > .template-casa-do-estudante__title {
+  .template-casa-do-estudante > .template-casa-do-estudante__header > .template-casa-do-estudante__header__title {
     max-width: 630px;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 30px;
+    line-height: 30px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 830px) {
+  .template-casa-do-estudante > .template-casa-do-estudante__header > .template-casa-do-estudante__header__btn {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .template-casa-do-estudante > .template-casa-do-estudante__header > .template-casa-do-estudante__header__btn input {
+    width: 30px;
+    height: 30px;
+  }
+  .template-casa-do-estudante > .template-casa-do-estudante__header > .template-casa-do-estudante__header__btn svg {
+    width: 30px;
+    height: 30px;
   }
 }
 .number-text-item {
@@ -680,9 +735,10 @@ header > div.header-menu-social > div svg {
   .number-text-item {
     width: 100%;
     display: flex;
+    justify-content: space-between;
   }
   .number-text-item .number-text-item__number {
-    width: 25%;
+    width: 14%;
     position: relative;
     margin-top: 60px;
   }
@@ -775,7 +831,15 @@ header > div.header-menu-social > div svg {
 }
 @media screen and (max-width: 830px) {
   .contact {
+    flex-direction: column;
     margin-bottom: 40px;
+  }
+  .contact .contact-item--1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact .contact-item--2 {
+    width: 100%;
   }
   .contact .contact-item {
     font-size: 18px;
@@ -792,15 +856,16 @@ header > div.header-menu-social > div svg {
   }
   .contact .contact-item address p {
     font-size: 18px;
-    line-height: 18px;
+    line-height: 10px;
   }
   .contact .contact-item img {
     width: 18px;
-    margin-right: 2%;
+    margin-right: 3%;
   }
   .contact span {
     margin-bottom: 10px;
     margin-top: 10px;
+    height: 2px;
   }
 }
 @media screen and (max-width: 660px) {
@@ -822,11 +887,7 @@ header > div.header-menu-social > div svg {
   }
   .contact .contact-item address p {
     font-size: 12px;
-    line-height: 13px;
-  }
-  .contact .contact-item img {
-    width: 14px;
-    margin-right: 1%;
+    line-height: 4px;
   }
 }
 .icon-link-text {
@@ -841,7 +902,7 @@ header > div.header-menu-social > div svg {
 }
 .icon-link-text a img {
   width: 40px;
-  margin-right: 1%;
+  margin-right: 0.9%;
 }
 @media screen and (max-width: 830px) {
   .icon-link-text {
@@ -862,10 +923,9 @@ header > div.header-menu-social > div svg {
   .icon-link-text a {
     font-size: 12px;
   }
-  .icon-link-text a img {
-    width: 14px;
-    margin-right: 1%;
-  }
+}
+.title-text-button {
+  width: 96%;
 }
 .title-text-button .title-text-button__title {
   margin-bottom: 50px;
@@ -912,11 +972,23 @@ header > div.header-menu-social > div svg {
   transition: background-color 0.3s;
 }
 @media screen and (max-width: 1250px) {
+  .title-text-button {
+    width: 100%;
+  }
   .title-text-button .title-text-button__content .title-text-button__content-description {
     height: 80px;
   }
 }
 @media screen and (max-width: 830px) {
+  .title-text-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .title-text-button .title-text-button__title {
+    margin-bottom: 30px;
+  }
   .title-text-button .title-text-button__content .title-text-button__content-btn {
     padding: 5px 10px;
     font-size: 16px;
@@ -926,22 +998,17 @@ header > div.header-menu-social > div svg {
   }
 }
 @media screen and (max-width: 660px) {
-  .title-text-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
   .title-text-button .title-text-button__decoration {
     display: none;
   }
   .title-text-button .title-text-button__title {
-    width: 29%;
+    width: 100%;
   }
   .title-text-button .title-text-button__title h2 {
     margin-bottom: 0;
   }
   .title-text-button .title-text-button__content {
-    width: 68%;
+    width: 100%;
     margin-bottom: 30px;
     position: relative;
   }
@@ -954,10 +1021,11 @@ header > div.header-menu-social > div svg {
     margin-bottom: 15px;
   }
   .title-text-button .title-text-button__content > .title-text-button__decoration {
-    margin: 30px 0 17px 0;
+    margin: 0;
     display: block;
     position: absolute;
-    bottom: 100%;
+    top: -90px;
+    height: 2px;
   }
   .title-text-button .title-text-button__content > .title-text-button__decoration.title-text-button__decoration__none {
     display: none;
@@ -976,7 +1044,7 @@ header > div.header-menu-social > div svg {
   justify-content: space-between;
 }
 .title-text-button-G .title-text-button-G__columns .title-text-button-G__column-1 {
-  width: 48%;
+  width: 45%;
   margin-right: 32px;
 }
 .title-text-button-G .title-text-button-G__columns .title-text-button-G__column-1 .title-text-button-G__column-1__title {
@@ -997,16 +1065,25 @@ header > div.header-menu-social > div svg {
 }
 .title-text-button-G .title-text-button-G__columns .title-text-button-G__column-2 {
   width: 48%;
+  margin-top: 80px;
 }
 .title-text-button-G .title-text-button-G__columns:hover .title-text-button-G__column-1__btn {
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 830px) {
+  .title-text-button-G .title-text-button-G__decoration {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 2px;
+  }
   .title-text-button-G .title-text-button-G__columns .title-text-button-G__column-1 .title-text-button-G__column-1__title {
     margin-bottom: 25px;
   }
   .title-text-button-G .title-text-button-G__columns .title-text-button-G__column-1 .title-text-button-G__column-1__description {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  .title-text-button-G .title-text-button-G__columns .title-text-button-G__column-1 .title-text-button-G__column-1__description p {
+    margin-bottom: 0px;
   }
   .title-text-button-G .title-text-button-G__columns .title-text-button-G__column-1 .title-text-button-G__column-1__btn {
     padding: 5px 10px;
@@ -1032,12 +1109,21 @@ header > div.header-menu-social > div svg {
     font-size: 16px;
   }
   .title-text-button-G .title-text-button-G__columns .title-text-button-G__column-2 {
+    margin-top: 30px;
     width: 100%;
   }
 }
 .wp-block-video video {
   border: #E2DF46 3px solid;
   border-radius: 43px;
+}
+.wp-video-shortcode {
+  border: yellow 2px solid;
+  border-radius: 15px;
+}
+.mejs-video {
+  border: yellow 2px solid;
+  border-radius: 15px;
 }
 .wp-block-embed iframe {
   box-sizing: border-box;
@@ -1219,11 +1305,15 @@ header > div.header-menu-social > div svg {
 }
 .home-casa-do-estudante {
   display: flex;
+  align-items: flex-start;
   justify-content: flex-end;
   padding: 0;
   overflow-y: hidden;
   position: relative;
-  max-width: 1763px;
+}
+.home-casa-do-estudante img {
+  width: auto;
+  height: 3060px;
 }
 .home-casa-do-estudante .home-casa-do-estudante--img--bg {
   display: none;
@@ -1249,13 +1339,12 @@ header > div.header-menu-social > div svg {
 }
 @media screen and (max-width: 830px) {
   .home-casa-do-estudante img {
-    width: 800px;
+    height: 1600px;
   }
 }
 @media screen and (max-width: 660px) {
   .home-casa-do-estudante img {
-    margin-top: -60px;
-    width: 600px;
+    height: 1222px;
   }
 }
 .box {
@@ -1287,7 +1376,7 @@ header > div.header-menu-social > div svg {
   transition: transform 0.5s;
 }
 .box .box-content {
-  padding: 0px 40px 18px 40px;
+  padding: 0px 40px 28px 40px;
   display: none;
 }
 .box .box-content p {
@@ -1329,7 +1418,7 @@ header > div.header-menu-social > div svg {
   display: block;
 }
 .box-1 {
-  top: 370px;
+  top: 256px;
   right: 100px;
 }
 .box-2 {
@@ -1337,7 +1426,7 @@ header > div.header-menu-social > div svg {
   left: 450px;
 }
 .box-3 {
-  top: 1500px;
+  top: 1540px;
   right: 100px;
 }
 .box-4 {
@@ -1345,7 +1434,7 @@ header > div.header-menu-social > div svg {
   left: 450px;
 }
 .box-5 {
-  top: 2760px;
+  top: 2610px;
   right: 100px;
 }
 @media screen and (max-width: 1250px) {
@@ -1395,15 +1484,15 @@ header > div.header-menu-social > div svg {
     left: 25px;
   }
   .box-3 {
-    top: 675px;
+    top: 640px;
     right: 25px;
   }
   .box-4 {
-    top: 944px;
+    top: 895px;
     left: 25px;
   }
   .box-5 {
-    top: 1171px;
+    top: 1153px;
     right: 25px;
   }
 }
@@ -1487,9 +1576,11 @@ header > div.header-menu-social > div svg {
 .blog-single h2 {
   margin-top: 30px;
   margin-bottom: 30px;
+  font-weight: 700;
 }
 .blog-single .blog-single__excerpt p {
   font-size: 22px;
+  line-height: 22px;
   font-weight: 400;
   margin-bottom: 60px;
   font-family: 'Barlow', sans-serif;
@@ -1515,6 +1606,16 @@ header > div.header-menu-social > div svg {
 @media screen and (max-width: 830px) {
   .blog-single {
     padding-bottom: 50px;
+  }
+  .blog-single h2 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+  .blog-single .blog-single__excerpt p {
+    font-size: 16px;
+    line-height: 17px;
+    margin-bottom: 40px;
   }
 }
 .time-line {
@@ -1606,17 +1707,27 @@ header > div.header-menu-social > div svg {
   .time-line .time-line__content .time-line__content-year .time-line__content-year__decoration {
     top: 20px;
   }
+  .time-line .time-line__content .time-line__content-year .time-line__content-year__year {
+    margin-top: 8px;
+  }
+  .time-line .time-line__content .time-line__content-year .time-line__content-year__year .decoration-bg {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
   .time-line .time-line__content .time-line__content-year .time-line__content-year__year div {
     padding: 5px 10px;
   }
   .time-line .time-line__content .time-line__content-year .time-line__content-year__year div p {
+    z-index: 1;
     font-size: 16px;
   }
   .time-line .time-line__content .time-line__content-description {
-    width: 78%;
+    margin-top: 8px;
+    width: 68%;
   }
 }
 form.wpcf7-form {
+  margin-bottom: 100px;
   font-family: 'Barlow', sans-serif;
   display: flex;
   justify-content: space-between;

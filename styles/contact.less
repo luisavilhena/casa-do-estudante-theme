@@ -54,7 +54,15 @@
 }
 @media screen and (max-width: @screen-sm) {
 	.contact {
+		flex-direction: column;
 		margin-bottom: 40px;
+		.contact-item--1 {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		.contact-item--2 {
+			width: 100%;
+		}
 		.contact-item {
 			font-size: 18px;
 			.contact-item__social {
@@ -70,17 +78,18 @@
 			address {
 				p {
 					font-size: 18px;
-					line-height: 18px;
+					line-height: 10px;
 				}
 			}
 			img {
 				width: 18px;
-				margin-right: 2%;
+				margin-right: 3%;
 			}
 		}
 		span {
 			margin-bottom: 10px;
 			margin-top: 10px;
+			height: 2px;
 		}
 	}
 }
@@ -102,12 +111,8 @@
 			address {
 				p {
 					font-size: 12px;
-					line-height: 13px;
+					line-height: 4px;
 				}
-			}
-			img {
-				width: 14px;
-				margin-right: 1%;
 			}
 		}
 
