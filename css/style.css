@@ -667,12 +667,14 @@ header > div.header-menu-social > div svg {
     margin-left: 0;
     padding: 8%;
   }
+  .template-casa-do-estudante > .template-casa-do-estudante__header {
+    height: auto;
+    margin-bottom: 30px;
+  }
   .template-casa-do-estudante > .template-casa-do-estudante__header > .template-casa-do-estudante__header__title {
     max-width: 630px;
     margin-top: 0px;
-    margin-bottom: 30px;
     line-height: 30px;
-    height: auto;
   }
 }
 @media screen and (max-width: 830px) {
@@ -1579,6 +1581,8 @@ header > div.header-menu-social > div svg {
 .blog-single .template-casa-do-estudante__header {
   display: flex;
   align-items: center;
+  margin-bottom: 170px;
+  height: auto;
 }
 .blog-single h2 {
   margin-top: 30px;
