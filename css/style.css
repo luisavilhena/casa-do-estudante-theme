@@ -1263,6 +1263,12 @@ header > div.header-menu-social > div svg {
   .faq .faq__description-decoration {
     height: 2px;
   }
+  .faq .faq__description .faq__description__item .faq__description__item__title {
+    width: 33%;
+  }
+  .faq .faq__description .faq__description__item .faq__description__item__description {
+    width: 55%;
+  }
   .faq .faq__title-content {
     display: flex;
     justify-content: space-between;
@@ -1278,6 +1284,7 @@ header > div.header-menu-social > div svg {
   .faq .faq__title-content .faq__title .faq__title__title {
     margin-right: 0;
     width: auto;
+    font-size: 16px;
   }
   .faq .faq__title-content .faq__title .faq__title__title:after {
     content: '';
