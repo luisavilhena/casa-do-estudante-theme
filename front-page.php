@@ -89,10 +89,10 @@ get_header(); ?>
           <h4>
             FAQ
           </h4>
+          <div>
+            <?php require('resources/icons/arrow-home.svg'); ?>
+          </div>
         </a>
-        <div>
-          <?php require('resources/icons/arrow-home.svg'); ?>
-        </div>
       </div>
     </div>
   </div>

@@ -631,17 +631,15 @@ header > div.header-menu-social > div svg {
 }
 .template-casa-do-estudante {
   margin-left: 360px;
-  padding: 12px 5% 70px 10%;
+  padding: 50px 5% 70px 10%;
 }
 .template-casa-do-estudante > .template-casa-do-estudante__header {
-  display: flex;
-  align-items: center;
   margin-bottom: 100px;
+  height: 145px;
 }
 .template-casa-do-estudante > .template-casa-do-estudante__header > .template-casa-do-estudante__header__title {
   margin-bottom: 0px !important;
   max-width: 720px;
-  height: 145px;
 }
 .template-casa-do-estudante > .template-casa-do-estudante__header > .template-casa-do-estudante__header__btn {
   position: relative;
@@ -782,7 +780,7 @@ header > div.header-menu-social > div svg {
 .contact {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 }
 .contact .contact-item {
   display: flex;
@@ -891,7 +889,7 @@ header > div.header-menu-social > div svg {
   }
 }
 .icon-link-text {
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 }
 .icon-link-text a {
   display: flex;
@@ -906,7 +904,7 @@ header > div.header-menu-social > div svg {
 }
 @media screen and (max-width: 830px) {
   .icon-link-text {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   .icon-link-text a {
     font-size: 18px;
@@ -918,7 +916,7 @@ header > div.header-menu-social > div svg {
 }
 @media screen and (max-width: 660px) {
   .icon-link-text {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   .icon-link-text a {
     font-size: 12px;
@@ -1399,9 +1397,11 @@ header > div.header-menu-social > div svg {
   color: white;
 }
 .box-link a {
+  display: contents;
   text-decoration: none;
 }
-.box-link div svg {
+.box-link a div svg {
+  display: block;
   transform: rotate(90deg) !important;
 }
 .box-active {
@@ -1415,6 +1415,9 @@ header > div.header-menu-social > div svg {
   transition: color 3s;
 }
 .box-active .box-header > div svg {
+  display: block;
+}
+.box-active.box-link a div svg {
   display: block;
 }
 .box-1 {
@@ -1572,6 +1575,10 @@ header > div.header-menu-social > div svg {
 .blog-single {
   max-width: 1000px;
   padding-bottom: 100px;
+}
+.blog-single .template-casa-do-estudante__header {
+  display: flex;
+  align-items: center;
 }
 .blog-single h2 {
   margin-top: 30px;

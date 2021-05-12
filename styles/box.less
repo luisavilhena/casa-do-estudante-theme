@@ -60,11 +60,13 @@
 }
 .box-link {
 	a {
+		display: contents;
 		text-decoration: none;
-	}
-	div {
-		svg {
-			transform: rotate(90deg) !important;
+		div {
+			svg {
+				display: block;
+				transform: rotate(90deg) !important;
+			}
 		}
 	}
 }
@@ -81,6 +83,15 @@
 		>div {
 			svg {
 				display: block;
+			}
+		}
+	}
+	&.box-link {
+		a {
+			div {
+				svg {
+					display: block;
+				}
 			}
 		}
 	}

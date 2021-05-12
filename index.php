@@ -3,7 +3,9 @@
 get_header(); ?>
 
 <main class="template-casa-do-estudante blog">
-	<h1 class="template-casa-do-estudante__title">BLOG</h1>
+	<div class="template-casa-do-estudante__header">
+		<h1 class="template-casa-do-estudante__header__title">BLOG</h1>
+	</div>
 	<span class="decoration decoration-bg"></span>
 	<div class="blog-list">
 		<?php while (have_posts()) : the_post(); ?>
