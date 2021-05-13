@@ -946,7 +946,7 @@ header > div.header-menu-social > div svg {
   display: none;
 }
 .title-text-button .title-text-button__content .title-text-button__content-description {
-  height: 100px;
+  height: 120px;
   margin-bottom: 40px;
 }
 .title-text-button .title-text-button__content .title-text-button__content-description strong {
@@ -976,7 +976,7 @@ header > div.header-menu-social > div svg {
     width: 100%;
   }
   .title-text-button .title-text-button__content .title-text-button__content-description {
-    height: 80px;
+    height: 100px;
   }
 }
 @media screen and (max-width: 830px) {
