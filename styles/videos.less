@@ -1,21 +1,36 @@
 @import './structure.less';
 
 .wp-block-video video {
-	border: @yellow 3px solid;
-	border-radius: 43px;
+	border: @yellow 2px solid;
+	border-radius: 15px;
+	position: relative;
 }
 
 .wp-video-shortcode {
+	// border: yellow 2px solid;
+	border-radius: 18px;
+}
+.mejs-video {
+	// border: yellow 5px solid;
+	border-radius: 15px;
+}
+.wp-video {
 	border: yellow 2px solid;
 	border-radius: 15px;
 }
-.mejs-video {
-	border: yellow 2px solid;
+
+.mejs-controls {
+	background-color: transparent !important;
+}
+
+.mejs-poster {
+	// border: @yellow 2px solid;
 	border-radius: 15px;
+	// box-sizing: content-box;
 }
 .wp-block-embed iframe {
 	box-sizing: border-box;
-	border: @yellow 3px solid;
+	border: @yellow 2px solid;
 	border-radius: 43px;
 	width: 100%;
 	height: 520px;

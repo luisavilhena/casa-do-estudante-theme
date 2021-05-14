@@ -29,7 +29,7 @@ function casa_do_estudante_title_img() {
  					</div>
  				</div>
  				<div>
- 					<img src="<?php echo wp_get_attachment_image_src($block['img'], 'ap_carousel_image_desktop_full_no_crop')[0]; ?>">
+ 					<img src="<?php echo wp_get_attachment_image_src($block['img'], full, full)[0]; ?>">
  				</div>
  			</div>
  

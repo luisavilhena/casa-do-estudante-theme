@@ -1,5 +1,6 @@
 <?php
 add_image_size('ap_carousel_image_desktop_full_no_crop', 800 , 480, false);
+add_image_size('ap_image_desktop_full_no_crop', 1000 , 700, false);
 add_image_size('ap_carousel_image_desktop_miniature_no_crop', 36, 32, false);
 add_image_size('cc__thumbnail_a4_vertical_no_crop', 420, 560, false);
 add_image_size('cc__thumbnail_a4_horizontal_crop', 560, 420, array('center', 'center'));

@@ -229,7 +229,7 @@ img {
   }
   p {
     font-size: 16px;
-    line-height: 17px;
+    line-height: 19px;
   }
   figure,
   .wp-block-image {
@@ -465,7 +465,7 @@ header {
   background-color: #E2DF46;
   padding: 50px 10px 0px 4%;
   width: 310px;
-  z-index: 1;
+  z-index: 10;
 }
 header #mobile-menu-trigger {
   display: none;
@@ -534,7 +534,7 @@ header > div.header-menu-social > div svg {
     width: auto;
     right: 0;
     height: 40px;
-    position: sticky;
+    position: fixed;
     transition: height 0.3s;
   }
   header .header-logo {
@@ -665,7 +665,7 @@ header > div.header-menu-social > div svg {
 @media screen and (max-width: 1250px) {
   .template-casa-do-estudante {
     margin-left: 0;
-    padding: 8%;
+    padding: 80px 8%;
   }
   .template-casa-do-estudante > .template-casa-do-estudante__header {
     height: auto;
@@ -1114,20 +1114,29 @@ header > div.header-menu-social > div svg {
   }
 }
 .wp-block-video video {
-  border: #E2DF46 3px solid;
-  border-radius: 43px;
+  border: #E2DF46 2px solid;
+  border-radius: 15px;
+  position: relative;
 }
 .wp-video-shortcode {
+  border-radius: 18px;
+}
+.mejs-video {
+  border-radius: 15px;
+}
+.wp-video {
   border: yellow 2px solid;
   border-radius: 15px;
 }
-.mejs-video {
-  border: yellow 2px solid;
+.mejs-controls {
+  background-color: transparent !important;
+}
+.mejs-poster {
   border-radius: 15px;
 }
 .wp-block-embed iframe {
   box-sizing: border-box;
-  border: #E2DF46 3px solid;
+  border: #E2DF46 2px solid;
   border-radius: 43px;
   width: 100%;
   height: 520px;
@@ -1169,7 +1178,7 @@ header > div.header-menu-social > div svg {
 }
 @media screen and (max-width: 830px) {
   .carousel .slick-list .item {
-    height: 400px;
+    height: 220px;
   }
   .carousel .slick-next {
     right: -5px;
@@ -1341,6 +1350,7 @@ header > div.header-menu-social > div svg {
 @media screen and (max-width: 1250px) {
   .home-casa-do-estudante {
     margin-left: 0;
+    margin-top: 80px;
     padding: 0%;
   }
 }
@@ -1522,6 +1532,9 @@ header > div.header-menu-social > div svg {
   margin-right: 35px;
   margin-bottom: 60px;
 }
+.blog .blog-list .blog-list-item h2 {
+  line-height: 32px;
+}
 .blog .blog-list .blog-list-item:nth-of-type(2n) {
   margin-right: 0px;
 }
@@ -1559,6 +1572,11 @@ header > div.header-menu-social > div svg {
   .blog .blog-list .blog-list-item .blog-list-item-img img {
     width: 450px;
     height: 450px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .blog .blog-list .blog-list-item h2 {
+    line-height: 19px;
   }
 }
 @media screen and (max-width: 660px) {
@@ -1624,6 +1642,9 @@ header > div.header-menu-social > div svg {
 @media screen and (max-width: 830px) {
   .blog-single {
     padding-bottom: 50px;
+  }
+  .blog-single .template-casa-do-estudante__header {
+    margin-bottom: 0px;
   }
   .blog-single h2 {
     font-size: 22px;
