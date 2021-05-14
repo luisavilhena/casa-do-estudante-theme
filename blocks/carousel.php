@@ -26,7 +26,7 @@ function casa_do_estudante_carousel() {
 			<div class="carousel">
 				<?php foreach ($block['carousel'] as $carousel) : ?>
 					<?php if ($carousel['img']) : ?>
-				<div class="item" style ="background-image: url('<?php echo wp_get_attachment_image_src($carousel['img'],'cc__thumbnail_a4_horizontal_crop')[0]; ?>');">
+				<div class="item" style ="background-image: url('<?php echo wp_get_attachment_image_src($carousel['img'],'ap_image_desktop_full_no_crop')[0]; ?>');">
 			
 				</div>
 					<?php endif; ?>
