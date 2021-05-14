@@ -665,7 +665,7 @@ header > div.header-menu-social > div svg {
 @media screen and (max-width: 1250px) {
   .template-casa-do-estudante {
     margin-left: 0;
-    padding: 80px 8%;
+    padding: 100px 8%;
   }
   .template-casa-do-estudante > .template-casa-do-estudante__header {
     height: auto;
@@ -1180,12 +1180,6 @@ header > div.header-menu-social > div svg {
   .carousel .slick-list .item {
     height: 220px;
   }
-  .carousel .slick-next {
-    right: -5px;
-  }
-  .carousel .slick-next:before {
-    content: url('../resources/icons/arrow-sm.svg');
-  }
 }
 .faq .faq__title__title-decoration {
   display: block;
@@ -1350,7 +1344,7 @@ header > div.header-menu-social > div svg {
 @media screen and (max-width: 1250px) {
   .home-casa-do-estudante {
     margin-left: 0;
-    margin-top: 80px;
+    margin-top: 100px;
     padding: 0%;
   }
 }
