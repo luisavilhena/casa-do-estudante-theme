@@ -38,7 +38,9 @@ function casa_do_estudante_contact() {
 					<?php endforeach;  ?>
 				</div>	
 				<div class="contact-item contact-item--2">
+					<?php if ($block['text_link']) :  ?>
 					<a  class="contact-item__link" href="<?php echo $block['link']; ?>"><?php echo $block['text_link']; ?></a>
+				<?php endif; ?>
 					<span></span>
 					<address><?php echo  $block['address']; ?></address>
 				</div>
