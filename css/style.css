@@ -1170,7 +1170,7 @@ header > div.header-menu-social > div svg {
 }
 @media screen and (max-width: 1250px) {
   .carousel .slick-next {
-    right: -5px;
+    right: -13px;
   }
   .carousel .slick-next:before {
     content: url('../resources/icons/arrow-sm.svg');
