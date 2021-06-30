@@ -491,7 +491,7 @@ header .header-menu-container ul#main-menu > li {
 }
 header .header-menu-container ul#main-menu > li > a {
   color: black;
-  display: inline;
+  display: block;
   text-decoration: none;
   position: relative;
   font-weight: 400;
