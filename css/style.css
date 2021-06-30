@@ -803,7 +803,7 @@ header > div.header-menu-social > div svg {
 .contact .contact-item .contact-item__link {
   display: block;
   line-height: 30px;
-  height: 30px;
+  min-height: 30px;
   font-size: 24px;
   font-weight: 400;
 }
@@ -851,7 +851,7 @@ header > div.header-menu-social > div svg {
     display: block;
     font-size: 18px;
     line-height: 18px;
-    height: 18px;
+    min-height: auto;
     margin-bottom: 3px;
   }
   .contact .contact-item address p {

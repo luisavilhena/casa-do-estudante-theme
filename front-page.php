@@ -85,7 +85,7 @@ get_header(); ?>
     </div>
     <div class="box box-5 box-link">
       <div class="box-header">
-        <a class=""href="https://casadoestudantehomolog.dreamhosters.com/faq/">
+        <a class=""href="https://reformadacasa.com/faq/">
           <h4>
             FAQ
           </h4>
