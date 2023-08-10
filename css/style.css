@@ -794,9 +794,11 @@ header > div.header-menu-social > div svg {
   }
 }
 .contact {
+  margin-bottom: 90px;
+}
+.contact .columns {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 90px;
 }
 .contact .contact-item {
   display: flex;
