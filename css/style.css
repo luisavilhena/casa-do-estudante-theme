@@ -409,6 +409,19 @@ img {
     height: 2px;
   }
 }
+.p-block-button a {
+  background-color: #E2DF46;
+  padding: 8px 15px;
+  border-radius: 27px;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+.p-block-button:hover {
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
 footer {
   display: none;
   justify-content: space-between;
@@ -496,6 +509,7 @@ header .header-menu-container ul#main-menu > li > a {
   position: relative;
   font-weight: 400;
   font-size: 28px;
+  line-height: 30px;
 }
 header .header-menu-container ul#main-menu > li > a:after {
   content: '';
@@ -1441,6 +1455,10 @@ header > div.header-menu-social > div svg {
   top: 910px;
   left: 450px;
 }
+.box-v2 {
+  top: 1300px;
+  right: 50px;
+}
 .box-3 {
   top: 1540px;
   right: 100px;
@@ -1492,12 +1510,16 @@ header > div.header-menu-social > div svg {
     line-height: 17px;
   }
   .box-1 {
-    top: 40px;
+    top: 2px;
     right: 25px;
   }
   .box-2 {
-    top: 340px;
+    top: 275px;
     left: 25px;
+  }
+  .box-v2 {
+    top: 552px;
+    right: 10px;
   }
   .box-3 {
     top: 640px;

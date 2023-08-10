@@ -53,6 +53,9 @@ $(document).ready(function(){
 	  	if($(window).scrollTop() > 100) {
 	  		$('.box-2').addClass('box-active');
 	  	}
+		  if($(window).scrollTop() > 400) {
+			$('.box-v2').addClass('box-active');
+		}
 	    if($(window).scrollTop() > 800) {
 	  		$('.box-3').addClass('box-active');
 	  	}
@@ -84,6 +87,9 @@ $(document).ready(function(){
 			}
 			if($(window).scrollTop() > 100) {
 				$('.box-2').addClass('box-active');
+			}
+			if($(window).scrollTop() > 120) {
+				$('.box-v2').addClass('box-active');
 			}
 		  if($(window).scrollTop() > 200) {
 				$('.box-3').addClass('box-active');
