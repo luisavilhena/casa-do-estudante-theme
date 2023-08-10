@@ -40,7 +40,7 @@
       id="logo-anchor"
       class="header-logo"
       href="<?php echo get_home_url(); ?>">
-      DOE POR UMA NOVA CASA
+      CASA DO ESTUDANTE
     </a>
 
     <button
