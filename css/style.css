@@ -586,7 +586,7 @@ header > div.header-menu-social > div svg {
     position: absolute;
     height: 4px;
     width: 28px;
-    background-color: currentColor;
+    background-color: black;
     opacity: 1;
     left: 4px;
     border-radius: 6px;
