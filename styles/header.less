@@ -14,6 +14,13 @@ header {
 	#mobile-menu-trigger {
 		display: none;
 	}
+	.text-fixed {
+		font-size: 26px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		background-color: @yellow;
+	}
 	.header-logo {
 		font-size: 42px;
 		line-height: 50.4px;
@@ -25,6 +32,7 @@ header {
 	}
 	.header-menu-container {
 		margin-bottom: 65px;
+		position: relative;
 		ul#main-menu {
 			font-weight: 400;
 			font-size: 28px;
@@ -36,8 +44,8 @@ header {
 					text-decoration: none;
 					position: relative;
 					font-weight: 400;
-					font-size:28px;
-					line-height: 30px;
+					font-size:24px;
+					line-height: 26px;
 					&:after {
 						content: '';
 						display: flex;
@@ -90,7 +98,9 @@ header {
 		height: 40px;
 		position: fixed;
 		transition: height 0.3s;
-
+		.text-fixed {
+			display: none;
+		}
 		.header-logo {
 			font-size: 20px;
 			line-height: 20px;

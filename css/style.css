@@ -483,6 +483,13 @@ header {
 header #mobile-menu-trigger {
   display: none;
 }
+header .text-fixed {
+  font-size: 26px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #E2DF46;
+}
 header .header-logo {
   font-size: 42px;
   line-height: 50.4px;
@@ -494,6 +501,7 @@ header .header-logo {
 }
 header .header-menu-container {
   margin-bottom: 65px;
+  position: relative;
 }
 header .header-menu-container ul#main-menu {
   font-weight: 400;
@@ -508,8 +516,8 @@ header .header-menu-container ul#main-menu > li > a {
   text-decoration: none;
   position: relative;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 26px;
 }
 header .header-menu-container ul#main-menu > li > a:after {
   content: '';
@@ -550,6 +558,9 @@ header > div.header-menu-social > div svg {
     height: 40px;
     position: fixed;
     transition: height 0.3s;
+  }
+  header .text-fixed {
+    display: none;
   }
   header .header-logo {
     font-size: 20px;

@@ -11,7 +11,7 @@ get_header(); ?>
       src="<?php echo get_template_directory_uri() ?>/resources/img/fachada-maior.png"
   />
   <div id="all-boxes"class="template-home__contents">
-    <div class="box box-1">
+    <div class="box box-1 box-active ">
       <div class="box-header">
         <h4>
           Sobre o financiamento
@@ -29,7 +29,7 @@ get_header(); ?>
         </a>
       </div>
     </div>
-    <div class="box box-2">
+    <div class="box box-2 box-active ">
       <div class="box-header">
         <h4>
           Sobre o projeto de reforma
@@ -49,7 +49,7 @@ get_header(); ?>
     </div>
     <div class="box box-v2 box-link">
       <div class="box-header">
-        <a class=""href="https://www.casadoestudante.org/faq/">
+        <a class=""href="https://www.casadoestudante.org/processo-seletivo/">
           <h4>
             Processo seletivo
           </h4>

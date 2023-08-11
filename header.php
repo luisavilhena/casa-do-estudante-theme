@@ -68,7 +68,17 @@
         href="<?php echo get_home_url(); ?>?s=">
   
       </a>
+      <?php
+      if(is_front_page()):
+      ?>
+      <div class="text-fixed">
+        Conheça a moradia para estudantes hipossuficientes da Faculdade de Direito da USP e nossa campanha de financiamento
+      </div>
+      <?php 
+      endif;
+      ?>
     </nav>
+    
     <div class="header-menu-social">
     	<div>
     		<a target="_blank" href="<?php echo carbon_get_theme_option('facebook'); ?>">

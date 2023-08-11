@@ -34,7 +34,7 @@ function casa_do_estudante_title_text_button() {
 					<div class="title-text-button__content-description">
 						<?php echo $block['description'];  ?>
 					</div>
-					<a class="title-text-button__content-btn" href="<?php echo $block['link'];  ?>"><?php echo $block['button'];  ?></a>
+					<a class="title-text-button__content-btn" target="_blank" href="<?php echo $block['link'];  ?>"><?php echo $block['button'];  ?></a>
 				</div>
 			</div>
  
