@@ -10,7 +10,7 @@ get_header(); ?>
   <img class="home-casa-do-estudante--img--bg"
       src="<?php echo get_template_directory_uri() ?>/resources/img/fachada-maior.png"
   />
-  <div class="template-home__contents">
+  <div id="all-boxes"class="template-home__contents">
     <div class="box box-1">
       <div class="box-header">
         <h4>

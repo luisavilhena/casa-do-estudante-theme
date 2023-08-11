@@ -409,7 +409,7 @@ img {
     height: 2px;
   }
 }
-.p-block-button a {
+.wp-block-button a {
   background-color: #E2DF46;
   padding: 8px 15px;
   border-radius: 27px;
@@ -419,7 +419,7 @@ img {
   font-weight: 400;
   color: black;
 }
-.p-block-button:hover {
+.wp-block-button:hover {
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 footer {
@@ -1532,6 +1532,16 @@ header > div.header-menu-social > div svg {
   .box-5 {
     top: 1153px;
     right: 25px;
+  }
+}
+.box.active {
+  margin-top: -100px;
+  transition: margin-top 1s;
+}
+@media screen and (max-width: 830px) {
+  .box.active {
+    margin-top: -4px;
+    transition: margin-top 0.2s;
   }
 }
 .blog {

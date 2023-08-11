@@ -185,3 +185,14 @@
 		right: 25px;
 	}
 }
+.box.active {
+	margin-top: -100px;
+	transition: margin-top 1s;
+}
+@media screen and (max-width: @screen-sm) {
+	.box.active {
+		margin-top: -4px;
+		transition: margin-top 0.2s;
+	}
+
+}
