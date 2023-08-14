@@ -48,32 +48,7 @@ var boxes = document.getElementById("all-boxes");
 var elItems = document.querySelectorAll(".box")
 console.log(elItems)
 var flag = false
-window.addEventListener("scroll", function(){
-  elItems.forEach((el)=> {
-    var positionBottom = el.getBoundingClientRect().bottom
-    // console.log(positionBottom, height)
-	if (window.innerWidth < 800) {
-			el.classList.add("active")
-			el.classList.add("box-active")
-			flag = true
-
-	}else {
-		if(positionBottom < height-200) {
-			// el.style.top="-100px"
-			el.classList.add("active")
-			el.classList.add("box-active")
-			flag = true
-			// gsap.from(el, {y: -200, duration: 5})
-		  }else {
-			el.classList.remove("active")
-			el.classList.remove("box-active")
-			flag= false
-		  }
-	}
-	console.log(positionBottom)
-  })
-  // console.log(portfolio.getBoundingClientRect(), sizeHeight)
-})
+https://www.casadoestudante.org/
 // console.log(sizeHeight)
 
 // $(document).ready(function(){
@@ -111,41 +86,41 @@ window.addEventListener("scroll", function(){
 // 	}
 // });
 
-// $(document).ready(function(){
-// 	if ($(window).width() < 800) {
-// 		$(window).on('scroll', function(event) {
-// 			//right
-// 			if($(window).scrollTop() > 10) {
-// 				$('.box-1').addClass('box-active');
-// 			}
-// 			if($(window).scrollTop() > 100) {
-// 				$('.box-2').addClass('box-active');
-// 			}
-// 			if($(window).scrollTop() > 120) {
-// 				$('.box-v2').addClass('box-active');
-// 			}
-// 		  if($(window).scrollTop() > 200) {
-// 				$('.box-3').addClass('box-active');
-// 			}
-// 		  if($(window).scrollTop() < 199) {
-// 				$('.box-3').removeClass('box-active');
-// 			}
-// 			if($(window).scrollTop() > 350) {
-// 				$('.box-4').addClass('box-active');
-// 			}
-// 		  if($(window).scrollTop() < 344) {
-// 				$('.box-4').removeClass('box-active');
-// 			}
-// 			if($(window).scrollTop() > 360) {
-// 				$('.box-5').addClass('box-active');
-// 			}
-// 			if($(window).scrollTop() < 310) {
-// 				$('.box-5').removeClass('box-active');
-// 			}
-// 		});
-// 	}
-// 	console.log($(window).scrollTop())
-// });
+$(document).ready(function(){
+	if ($(window).width() < 800) {
+		$(window).on('scroll', function(event) {
+			//right
+			if($(window).scrollTop() > 10) {
+				$('.box-1').addClass('box-active');
+			}
+			if($(window).scrollTop() > 100) {
+				$('.box-2').addClass('box-active');
+			}
+			if($(window).scrollTop() > 120) {
+				$('.box-v2').addClass('box-active');
+			}
+		  if($(window).scrollTop() > 200) {
+				$('.box-3').addClass('box-active');
+			}
+		  if($(window).scrollTop() < 199) {
+				$('.box-3').removeClass('box-active');
+			}
+			if($(window).scrollTop() > 350) {
+				$('.box-4').addClass('box-active');
+			}
+		  if($(window).scrollTop() < 344) {
+				$('.box-4').removeClass('box-active');
+			}
+			if($(window).scrollTop() > 360) {
+				$('.box-5').addClass('box-active');
+			}
+			if($(window).scrollTop() < 310) {
+				$('.box-5').removeClass('box-active');
+			}
+		});
+	}
+	console.log($(window).scrollTop())
+});
 
 //home click box
 $('.box-1').on('click', () => {

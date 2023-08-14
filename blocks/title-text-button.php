@@ -34,6 +34,11 @@ function casa_do_estudante_title_text_button() {
 					<div class="title-text-button__content-description">
 						<?php echo $block['description'];  ?>
 					</div>
+					
+					<form class="title-text-button__content-btn" action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="AYXKL3G67YGNG" />
+					<input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Faça doações com o botão do PayPal" />
+					</form>
 					<a class="title-text-button__content-btn" target="_blank" href="<?php echo $block['link'];  ?>"><?php echo $block['button'];  ?></a>
 				</div>
 			</div>

@@ -484,7 +484,8 @@ header #mobile-menu-trigger {
   display: none;
 }
 header .text-fixed {
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 26px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -497,7 +498,7 @@ header .header-logo {
   text-decoration: none;
   color: black;
   display: block;
-  margin-bottom: 135px;
+  margin-bottom: 100px;
 }
 header .header-menu-container {
   margin-bottom: 65px;
@@ -608,7 +609,7 @@ header > div.header-menu-social > div svg {
   header .header-menu-container {
     display: none;
     margin-top: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
   header > div.header-menu-social {
     display: none;
@@ -1521,11 +1522,11 @@ header > div.header-menu-social > div svg {
     line-height: 17px;
   }
   .box-1 {
-    top: 2px;
+    top: 5px;
     right: 25px;
   }
   .box-2 {
-    top: 275px;
+    top: 269px;
     left: 25px;
   }
   .box-v2 {

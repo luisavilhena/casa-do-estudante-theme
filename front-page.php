@@ -47,7 +47,7 @@ get_header(); ?>
         </a>
       </div>
     </div>
-    <div class="box box-v2 box-link">
+    <div class="box box-v2 box-active box-link">
       <div class="box-header">
         <a class=""href="https://www.casadoestudante.org/processo-seletivo/">
           <h4>
@@ -60,7 +60,7 @@ get_header(); ?>
       </div>
     </div>
 
-    <div class="box box-3">
+    <div class="box box-3 box-active">
       <div class="box-header">
         <h4>
           Histórico da Casa
@@ -78,7 +78,7 @@ get_header(); ?>
         </a>
       </div>
     </div>
-    <div class="box box-4">
+    <div class="box box-4 box-active">
       <div class="box-header">
         <h4>
           Blog
@@ -96,7 +96,7 @@ get_header(); ?>
         </a>
       </div>
     </div>
-    <div class="box box-5 box-link">
+    <div class="box box-5 box-link box-active">
       <div class="box-header">
         <a class=""href="https://www.casadoestudante.org/faq/">
           <h4>
