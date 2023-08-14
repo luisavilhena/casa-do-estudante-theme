@@ -498,7 +498,7 @@ header .header-logo {
   text-decoration: none;
   color: black;
   display: block;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 header .header-menu-container {
   margin-bottom: 65px;
@@ -509,7 +509,7 @@ header .header-menu-container ul#main-menu {
   font-size: 28px;
 }
 header .header-menu-container ul#main-menu > li {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 header .header-menu-container ul#main-menu > li > a {
   color: black;
@@ -1464,7 +1464,7 @@ header > div.header-menu-social > div svg {
   right: 100px;
 }
 .box-2 {
-  top: 910px;
+  top: 800px;
   left: 450px;
 }
 .box-v2 {
