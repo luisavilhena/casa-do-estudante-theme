@@ -3,7 +3,6 @@ use Carbon_Fields\Block;
 use Carbon_Fields\Field;
 
 Block::make('Lista de logo')
-  ->set_category($cc_blocks__config->themeId)
   ->add_fields(array(
     Field::make('complex', 'logo_list', 'Lista de Logos')
       ->add_fields(array(

@@ -5,13 +5,11 @@ use Carbon_Fields\Field;
  
 add_action( 'after_setup_theme', 'casa-do-estudante' );
  
-function casa_do_estudante_title_text_button() {
-	Block::make( 'Título, texto e botão' )
+function casa_do_estudante_paypal() {
+	Block::make( 'Paypal' )
 		->add_fields( array(
 			Field::make( 'text', 'title_1', 'Título linha 1' ),
 			Field::make( 'text', 'title_2', 'Título linha 2' ),
-			Field::make('text', 'link', 'Link'),
-			Field::make('text', 'button', 'Texto do botão'),
 			Field::make( 'rich_text', 'description', 'Descrição' ),
 			Field::make( 'radio', 'radio', 'Tirar adorno amarelo?')
 				->set_options( array(
@@ -34,8 +32,10 @@ function casa_do_estudante_title_text_button() {
 					<div class="title-text-button__content-description">
 						<?php echo $block['description'];  ?>
 					</div>
-					
-					<a class="title-text-button__content-btn" target="_blank" href="<?php echo $block['link'];  ?>"><?php echo $block['button'];  ?></a>
+                    <form class="title-text-button__content-btn" action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="AYXKL3G67YGNG" />
+					<input type="image" src="https://www.casadoestudante.org/wp-content/uploads/2023/08/Captura-de-Tela-2023-08-24-as-17.24.40.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Faça doações com o botão do PayPal" />
+					</form>
 				</div>
 			</div>
  
@@ -44,4 +44,4 @@ function casa_do_estudante_title_text_button() {
 			// return ob_get_flush();
  		} );
 }
-add_action( 'carbon_fields_register_fields', 'casa_do_estudante_title_text_button' );
+add_action( 'carbon_fields_register_fields', 'casa_do_estudante_paypal' );

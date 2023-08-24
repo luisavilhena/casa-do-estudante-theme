@@ -12,4 +12,5 @@
 	require('faq.php');
 	require('time-line.php');
 	require('title_text.php');
+	require('paypal.php');
 ?>
